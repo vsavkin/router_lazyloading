@@ -10,7 +10,7 @@ export const MESSAGES_ROUTES = [
 ];
 
 @NgModule({
-  imports: [CommonModule, RouterModule],
-  declarations: [MessageCmp, MessagesCmp]
+  imports: [CommonModule, RouterModule.forChild(MESSAGES_ROUTES)],
+  declarations: [MessageCmp, MessagesCmp],
 })
 export class MessagesModule {}
