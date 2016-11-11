@@ -14,7 +14,7 @@ export const SETTINGS_ROUTES = [
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule
+    RouterModule.forChild(SETTINGS_ROUTES)
   ],
   declarations: [SettingsCmp, PageSizeCmp]
 })

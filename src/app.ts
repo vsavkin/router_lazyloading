@@ -4,7 +4,6 @@ import {BrowserModule} from '@angular/platform-browser';
 
 import {MenuModule, MENU_ROUTES} from './menu';
 import {MessagesModule, MESSAGES_ROUTES} from './messages';
-import {SettingsModule, SETTINGS_ROUTES} from './settings';
 
 import {Repository} from './repository';
 
@@ -22,12 +21,11 @@ export class RootCmp {}
 
     MenuModule,
     MessagesModule,
-    SettingsModule,
 
     RouterModule.forRoot([
       ...MENU_ROUTES,
       { path: 'messages', children: MESSAGES_ROUTES },
-      { path: 'settings', children: SETTINGS_ROUTES }
+      { path: 'settings', loadChildren: './settings/index#SettingsModule' }
     ])
   ],
 
