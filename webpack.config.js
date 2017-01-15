@@ -13,7 +13,8 @@ module.exports = {
   },
   plugins: [
     new ngtools.AotPlugin({
-      tsConfigPath: './tsconfig.json'
+      tsConfigPath: './tsconfig.json',
+      mainPath: "./src/main.ts"
     })
   ],
   module: {
