@@ -11,7 +11,7 @@ This repository shows how to migrate an Angular 2 application to use lazy loadin
 
 - optionally `npm run build` to build bundle
 
-## Applicaiton
+## Application
 
 ### Modules
 
