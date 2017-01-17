@@ -39,4 +39,4 @@ The repository has three commits:
 - **load settings lazily** extracts SettingsModule into its own bundle.
 - **load messages lazily** extracts MessagesModule into its own bundle.
 
-As you can see extracting a module into its own bundle requires removing an import and updating two lines the configuration. The behavior of the application stays the same, the webpack configuratrion stays the same, no components have to be updated.
+As you can see, extracting a module into it's own bundle requires removing an import and updating two lines in the configuration. The behavior of the application stays the same, the webpack configuratrion stays the same, no components have to be updated.
